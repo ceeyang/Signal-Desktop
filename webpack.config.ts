@@ -4,8 +4,8 @@
 import { resolve } from 'path';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Configuration, EnvironmentPlugin, ProvidePlugin } from 'webpack';
-import HtmlWebpackPlugin = require('html-webpack-plugin');
-import TerserPlugin = require('terser-webpack-plugin');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 
 const context = __dirname;
 const { NODE_ENV: mode = 'development' } = process.env;
